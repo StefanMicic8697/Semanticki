@@ -12,7 +12,9 @@
           <v-text-field label="Naslov" v-model="naslov"></v-text-field>
           <v-text-field label="Predmet" v-model="predmet"></v-text-field>
           <v-text-field label="Izvor" v-model="izvor"></v-text-field>
-          <v-btn id="submitId" class="primary"> submit </v-btn>
+          <v-btn id="submitId" @click="dodajNastavniMaterijal" class="primary">
+            Dodaj
+          </v-btn>
         </v-col>
       </v-row>
     </v-card>
@@ -20,6 +22,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "NastavniMaterijal",
   data() {
@@ -32,6 +36,26 @@ export default {
       predmet: "",
       izvor: "",
     };
+  },
+  methods: {
+    dodajNastavniMaterijal() {
+      axios
+        .post("http://localhost:5000/dodaj-nastavni-materijal", {
+          id: this.id,
+          autor: this.autor,
+          opis: this.opis,
+          jezik: this.jezik,
+          naslov: this.naslov,
+          predmet: this.predmet,
+          izvor: this.izvor,
+        })
+        .then((response) => {
+          alert(response.data.message);
+        })
+        .catch((error) => {
+          alert(error.response.data.message);
+        });
+    },
   },
 };
 </script>

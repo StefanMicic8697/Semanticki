@@ -3,8 +3,8 @@
     <v-row>
       <v-col>
         <v-radio-group row v-model="radioSelect">
-          <v-radio label="Kurs" value="kurs"></v-radio>
-          <v-radio label="Smer" value="smer"></v-radio>
+          <v-radio label="Kurs" @click="radioClick" value="kurs"></v-radio>
+          <v-radio label="Smer" @click="radioClick" value="smer"></v-radio>
         </v-radio-group>
       </v-col>
     </v-row>
@@ -56,7 +56,9 @@
             <tbody>
               <tr v-for="item in kursevi" :key="item.kurs">
                 <td>{{ item.kurs }}</td>
-                <td>{{ item.url }}</td>
+                <td>
+                  <a :href="item.url">{{ item.url }}</a>
+                </td>
               </tr>
             </tbody>
           </template>
@@ -65,14 +67,16 @@
           <template>
             <thead>
               <tr>
-                <th class="text-left">Kurs</th>
+                <th class="text-left">Smer</th>
                 <th class="text-left">URL</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="item in smerovi" :key="item.smer">
                 <td>{{ item.smer }}</td>
-                <td>{{ item.url }}</td>
+                <td>
+                  <a :href="item.url">{{ item.url }}</a>
+                </td>
               </tr>
             </tbody>
           </template>
@@ -97,6 +101,10 @@ export default {
     smerovi: [],
   }),
   methods: {
+    radioClick() {
+      this.kursevi = [];
+      this.smerovi = [];
+    },
     pretraziSmer() {
       this.kursevi = [];
       axios

@@ -12,7 +12,9 @@
           <v-text-field label="Naslov" v-model="naslov"></v-text-field>
           <v-text-field label="Predmet" v-model="predmet"></v-text-field>
           <v-text-field label="Izvor" v-model="izvor"></v-text-field>
-          <v-btn id="submitId" class="primary"> submit </v-btn>
+          <v-btn id="submitId" @click="dodajStudijskiProgram" class="primary">
+            dodaj
+          </v-btn>
         </v-col>
       </v-row>
     </v-card>
@@ -33,6 +35,27 @@ export default {
       predmet: "",
       izvor: "",
     };
+  },
+  methods: {
+    dodajStudijskiProgram() {
+      axios
+        .post("http://localhost:5000/dodaj-studijski-program", {
+          id: this.id,
+          autor: this.autor,
+          opis: this.opis,
+          datum: this.datum,
+          jezik: this.jezik,
+          naslov: this.naslov,
+          predmet: this.predmet,
+          izvor: this.izvor,
+        })
+        .then((response) => {
+          alert(response.data.message);
+        })
+        .catch((error) => {
+          alert(error.response.data.message);
+        });
+    },
   },
 };
 </script>

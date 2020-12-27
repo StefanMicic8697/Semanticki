@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-4 "http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#HasPart -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-4;HasPart">
+        <rdfs:range rdf:resource="&untitled-ontology-4;Kurs"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Studijski_program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Objective -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-4;Objective">
+        <rdfs:range rdf:resource="&untitled-ontology-4;Cilj"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Kurs"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Specifies -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-4;Specifies">
+        <rdfs:domain rdf:resource="&untitled-ontology-4;Cilj"/>
+        <rdfs:range rdf:resource="&untitled-ontology-4;Nastavni_materijal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Creator -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Creator">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Date -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Date">
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Description -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Description">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Identifier -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Identifier">
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Language -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Language">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Publisher -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Publisher">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Source -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Source">
+        <rdfs:range rdf:resource="&xsd;anyURI"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Subject -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Subject">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Title -->
+
+    <owl:DatatypeProperty rdf:about="&untitled-ontology-4;Title">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Cilj -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Cilj"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Kurs -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Kurs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Nastavni_materijal -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Nastavni_materijal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Studijski_program -->
+
+    <owl:Class rdf:about="&untitled-ontology-4;Studijski_program"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Koncepti_deep_learning_modela -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Koncepti_deep_learning_modela">
+        <rdf:type rdf:resource="&untitled-ontology-4;Cilj"/>
+        <Specifies rdf:resource="&untitled-ontology-4;Konvolutivne_neuronske_mreze"/>
+        <Specifies rdf:resource="&untitled-ontology-4;Vestacke_neuronske_mreze"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Koncepti_semantickog_veba -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Koncepti_semantickog_veba">
+        <rdf:type rdf:resource="&untitled-ontology-4;Cilj"/>
+        <Specifies rdf:resource="&untitled-ontology-4;Prezentacija_ontologije"/>
+        <Specifies rdf:resource="&untitled-ontology-4;Prezentacija_uvod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Konvolutivne_neuronske_mreze -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Konvolutivne_neuronske_mreze">
+        <rdf:type rdf:resource="&untitled-ontology-4;Nastavni_materijal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Neuronske_mreze -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Neuronske_mreze">
+        <rdf:type rdf:resource="&untitled-ontology-4;Kurs"/>
+        <Objective rdf:resource="&untitled-ontology-4;Koncepti_deep_learning_modela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Prezentacija_ontologije -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Prezentacija_ontologije">
+        <rdf:type rdf:resource="&untitled-ontology-4;Nastavni_materijal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Prezentacija_uvod -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Prezentacija_uvod">
+        <rdf:type rdf:resource="&untitled-ontology-4;Nastavni_materijal"/>
+        <Creator rdf:datatype="&xsd;string">Milan Segedinac</Creator>
+        <Description rdf:datatype="&xsd;string">Prezentacije koje opisuju pravila polaganja</Description>
+        <Language rdf:datatype="&xsd;string">Srpski</Language>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Racunastvo_i_automatika -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Racunastvo_i_automatika">
+        <rdf:type rdf:resource="&untitled-ontology-4;Studijski_program"/>
+        <Identifier rdf:datatype="&xsd;integer">1</Identifier>
+        <Date rdf:datatype="&xsd;dateTime">16-Dec-2020</Date>
+        <Creator rdf:datatype="&xsd;string">Milan Vidakovic</Creator>
+        <Description rdf:datatype="&xsd;string">Osposobljavanje za razvoj slozenih softverskih resenja</Description>
+        <Subject rdf:datatype="&xsd;string">Programiranje
+</Subject>
+        <Title rdf:datatype="&xsd;string">Racunastvo i automatika</Title>
+        <Language rdf:datatype="&xsd;string">Srpski</Language>
+        <Publisher rdf:datatype="&xsd;string">Vidakovic Milan</Publisher>
+        <Source rdf:datatype="&xsd;anyURI">http://ftn.uns.ac.rs/1547037051/racunarstvo-i-automatika</Source>
+        <HasPart rdf:resource="&untitled-ontology-4;Neuronske_mreze"/>
+        <HasPart rdf:resource="&untitled-ontology-4;Semanticki_veb"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Semanticki_veb -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Semanticki_veb">
+        <rdf:type rdf:resource="&untitled-ontology-4;Kurs"/>
+        <Publisher rdf:datatype="&xsd;string">Milan Segedinac</Publisher>
+        <Creator rdf:datatype="&xsd;string">Segedinac MIlan</Creator>
+        <Source rdf:datatype="&xsd;anyURI">http://ftn.uns.ac.rs/n243861680/semanticki-veb</Source>
+        <Description rdf:datatype="&xsd;string">Увод: Структура, синтакса и семантика; Потреба за семантиком на Web-у. Мета-програмирање: Мета-подаци; XML шема; XSLT; RDF. Семантика: Семантика и знање;Онтологије; Логике; Закључивање; Моделирање домена; Контекст. Дистрибуирано знање: Класификација; Протоколи засновани на знању. Технологије: Алати за рад са онтологијама; Програмски пакети (API) за рад са онтологијама; OWL. SPARQL. Методологије: Методологије за инжињеринг онтологија; Методологије за уводјење система управљања знањем; Методологије развоја семантичких система. Семантички системи: Семантички Web Сервиси, Семантички Web Портали, Семантички Wiki, Семантички Мулти-Агентни системи, Семантички Web Браузери. Примене: биоинформатика, системи за управљање документима, претраживање информација, итд.</Description>
+        <Objective rdf:resource="&untitled-ontology-4;Koncepti_semantickog_veba"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2020/11/untitled-ontology-4#Vestacke_neuronske_mreze -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-4;Vestacke_neuronske_mreze">
+        <rdf:type rdf:resource="&untitled-ontology-4;Nastavni_materijal"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
