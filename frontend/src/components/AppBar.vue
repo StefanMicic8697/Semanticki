@@ -10,7 +10,7 @@
         }
       "
     >
-      Study program
+      studijski program
     </v-btn>
 
     <v-btn
@@ -21,7 +21,7 @@
         }
       "
     >
-      course
+      kurs
     </v-btn>
 
     <v-btn
@@ -44,6 +44,28 @@
       "
     >
       nastavni materijal
+    </v-btn>
+
+    <v-btn
+      text
+      @click="
+        () => {
+          this.$router.push('/pretraga');
+        }
+      "
+    >
+      pretraga
+    </v-btn>
+
+          <v-btn
+      text
+      @click="
+        () => {
+          this.$router.push('/sparql');
+        }
+      "
+    >
+      SPARQL
     </v-btn>
   </v-app-bar>
 </template>

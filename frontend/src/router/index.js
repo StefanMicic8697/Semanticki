@@ -5,6 +5,8 @@ import Kurs from '../components/Kurs.vue'
 import NastavniMaterijal from '../components/NastavniMaterijal.vue'
 import ObrazovniCilj from '../components/ObrazovniCilj.vue'
 import StudijskiProgram from '../components/StudijskiProgram.vue'
+import Pretraga from '../components/Pretraga.vue'
+import SPARQL from '../components/SPARQL.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +30,16 @@ const routes = [
     path: '/studijski-program',
     name: 'StudijskiProgram',
     component: StudijskiProgram
+  },
+  {
+    path: '/pretraga',
+    name: 'Pretraga',
+    component: Pretraga
+  },
+  {
+    path: '/sparql',
+    name: 'SPARQL',
+    component: SPARQL
   },
 ]
 

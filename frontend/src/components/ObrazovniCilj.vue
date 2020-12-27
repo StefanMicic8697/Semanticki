@@ -5,8 +5,8 @@
         <v-col align="center">
           <h2>Obrazovni cilj</h2>
           <v-text-field label="Id"></v-text-field>
-          <v-text-field label="Description"></v-text-field>
-          <v-text-field label="Title"></v-text-field>
+          <v-text-field label="Opis"></v-text-field>
+          <v-text-field label="Naslov"></v-text-field>
           <v-btn id="submitId" class="primary"> submit </v-btn>
         </v-col>
       </v-row>
